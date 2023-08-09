@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import './Header.css'
 
 export default function Header() {
+  const [isNavOpen, setNavOpen] = useState(false);
+  const toggleNav = ()=> {
+    setNavOpen(!isNavOpen);
+  }
   //Header Logo Prop 
   const logo = {
     name: 'OS'
@@ -35,13 +39,9 @@ export default function Header() {
       link: '#'
     },
   ] 
-  const [isNavOpen, setNavOpen] = useState(false);
-  const toggleNav = ()=> {
-    setNavOpen(!isNavOpen);
-  }
   return (
     <>
-      <div className={`header rounded-xl bg-first flex justify-between items-center px-60 smallheader:px-25
+      <div className={`header Pc:h-90 Desktop:h-90 rounded-xl bg-first flex justify-between items-center px-60 smallheader:px-25
        header:flex header:overflow-y-visible header:flex-col header:gap-4
       `}>
         <div className={`menu-left  header:order-3 header:${isNavOpen ? 'block' : 'hidden'}`}>
