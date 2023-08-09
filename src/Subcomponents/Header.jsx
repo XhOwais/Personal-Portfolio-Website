@@ -41,10 +41,10 @@ export default function Header() {
   ] 
   return (
     <>
-      <div className={`header Pc:h-90 Desktop:h-90 rounded-xl bg-first flex justify-between items-center px-60 smallheader:px-25 smallmobile:px-16
+      <div className={`header  Pc:h-90 Desktop:h-90 rounded-xl bg-first flex justify-between items-center px-60 smallheader:px-25 smallmobile:px-16
        header:flex header:overflow-y-visible header:flex-col header:gap-4
       `}>
-        <div className={`menu-left  header:order-3 headertarget:block ${isNavOpen ? 'header:block' : 'hidden'} Desktop:w-421`}>
+        <div className={`menu-left  header:order-3  headertarget:block ${isNavOpen ? 'header:block' : 'hidden'} Desktop:w-421`}>
           <ul className=' flex
           header:block'>
             {menu_left.map((menu_left, index) => (
@@ -57,14 +57,14 @@ export default function Header() {
         header:w-60 header:h-60 header:text-xl header:order-1'>
           {logo.name}
         </div>
-        <div onClick={toggleNav}  className=' toggleBtn w-80 h-23  Pc:hidden Desktop:hidden order-2 flex flex-col justify-between items-center'>
-          <div className={` w-60 h-3 ${isNavOpen ? 'bg-second rotate-45' : 'bg-white'}`}></div>
-          <div className={`w-60 h-3 bg-white self-start ${isNavOpen ? 'hidden' : 'block'}`}></div>
-          <div className={` w-60 h-3 ${isNavOpen ? 'bg-second -rotate-45' : 'bg-white'}`}></div>
+        <div onClick={toggleNav}  className=' toggleBtn w-80 h-23  Pc:hidden Desktop:hidden order-2 flex flex-col justify-between items-center '>
+          <div className={` w-60 h-3 ease-in duration-300 ${isNavOpen ? 'bg-second rotate-45' : 'bg-white'}`}></div>
+          <div className={`w-60 h-3 ease-in duration-300 bg-white self-start ${isNavOpen ? 'hidden' : 'block'}`}></div>
+          <div className={` w-60 h-3 ease-in duration-300 ${isNavOpen ? 'bg-second -rotate-45' : 'bg-white'}`}></div>
         </div>
         </div>
         <div className={`menu-right
-         header:order-4 headertarget:block ${isNavOpen ? 'header:block' : 'hidden'}`}>
+         header:order-4 headertarget:block  ${isNavOpen ? 'header:block' : 'hidden'}`}>
           <ul className=' flex
           header:block'>
             {menu_right.map((menu_right, index) => (
