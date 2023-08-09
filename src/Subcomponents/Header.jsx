@@ -58,9 +58,6 @@ export default function Header() {
           {logo.name}
         </div>
         <div onClick={toggleNav} className=' w-60 h-23 bg-second Pc:hidden Desktop:hidden order-2'>
-          <div className=' w-60 h-4 bg-white'></div>
-          <div className=' w-60 h-4 bg-white'></div>
-          <div className=' w-60 h-4 bg-white'></div>
         </div>
         </div>
         <div className={`menu-right
