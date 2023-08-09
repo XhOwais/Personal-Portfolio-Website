@@ -42,13 +42,13 @@ export default function Header() {
   return (
     <>
       <div className={`header rounded-xl bg-first flex justify-between items-center px-60 smallheader:px-25
-       header:flex header:overflow-y-visible header:flex-col
+       header:flex header:overflow-y-visible header:flex-col header:gap-4
       `}>
         <div className={`menu-left  header:order-3 header:${isNavOpen ? 'block' : 'hidden'}`}>
           <ul className=' flex
           header:block'>
             {menu_left.map((menu_left, index) => (
-              <li className='menu_left font-heading text-white pl-16'><a href={menu_left.link} className=' hover:text-hover'>{menu_left.title}</a></li>
+              <li className='menu_left font-heading text-white pl-16 header:pb-10'><a href={menu_left.link} className=' hover:text-hover'>{menu_left.title}</a></li>
             ))}
           </ul>
         </div>
@@ -65,7 +65,7 @@ export default function Header() {
           <ul className=' flex
           header:block'>
             {menu_right.map((menu_right, index) => (
-              <li className='menu_right font-heading text-white pr-16'><a href={menu_right.link} className=' hover:text-hover'>{menu_right.title}</a></li>
+              <li className='menu_right font-heading text-white pr-16 header:pb-10'><a href={menu_right.link} className=' hover:text-hover'>{menu_right.title}</a></li>
             ))}
           </ul>
         </div>
