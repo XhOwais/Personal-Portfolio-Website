@@ -44,7 +44,7 @@ export default function Header() {
       <div className={`header Pc:h-90 Desktop:h-90 rounded-xl bg-first flex justify-between items-center px-60 smallheader:px-25
        header:flex header:overflow-y-visible header:flex-col header:gap-4
       `}>
-        <div className={`menu-left  header:order-3 header:${isNavOpen ? 'block' : 'hidden'}`}>
+        <div className={`menu-left  header:order-3 headertarget:block ${isNavOpen ? 'header:block' : 'hidden'}`}>
           <ul className=' flex
           header:block'>
             {menu_left.map((menu_left, index) => (
@@ -57,11 +57,11 @@ export default function Header() {
         header:w-60 header:h-60 header:text-xl header:order-1'>
           {logo.name}
         </div>
-        <div onClick={toggleNav} className=' w-60 h-23 bg-second Pc:hidden Desktop:hidden order-2'>
+        <div onClick={toggleNav}  className=' toggleBtn w-60 h-23 bg-second Pc:hidden Desktop:hidden order-2'>
         </div>
         </div>
         <div className={`menu-right
-         header:order-4 header:${isNavOpen ? 'block' : 'hidden'}`}>
+         header:order-4 headertarget:block ${isNavOpen ? 'header:block' : 'hidden'}`}>
           <ul className=' flex
           header:block'>
             {menu_right.map((menu_right, index) => (

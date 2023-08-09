@@ -33,7 +33,11 @@ export default {
         },
         "smallheader": {
           "min": "150px",
-          "max": "600px"
+          "max": "600x"
+        },
+        "headertarget": {
+          "min": "1280px",
+          "max": "2800px"
         }
       },
       "width": {

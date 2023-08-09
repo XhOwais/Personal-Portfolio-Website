@@ -56,6 +56,7 @@ const tailwindConfig = {
         'mobile': { min: '450px', max: '960px' },
         'header': {min: '150px', max: '1280px'},
         'smallheader': {min: '150px', max: '600x'},
+        'headertarget': {min: '1280px', max: '2800px'}
       },
       width: widthClasses,
       height: heightClasses,
