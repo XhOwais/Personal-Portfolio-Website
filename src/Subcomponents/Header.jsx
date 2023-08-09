@@ -41,19 +41,19 @@ export default function Header() {
   ] 
   return (
     <>
-      <div className={`header Pc:h-90 Desktop:h-90 rounded-xl bg-first flex justify-between items-center px-60 smallheader:px-25
+      <div className={`header Pc:h-90 Desktop:h-90 rounded-xl bg-first flex justify-between items-center px-60 smallheader:px-25 smallmobile:px-16
        header:flex header:overflow-y-visible header:flex-col header:gap-4
       `}>
-        <div className={`menu-left  header:order-3 headertarget:block ${isNavOpen ? 'header:block' : 'hidden'}`}>
+        <div className={`menu-left  header:order-3 headertarget:block ${isNavOpen ? 'header:block' : 'hidden'} Desktop:w-421`}>
           <ul className=' flex
           header:block'>
             {menu_left.map((menu_left, index) => (
-              <li className='menu_left font-heading text-white pl-16 header:pb-10'><a href={menu_left.link} className=' hover:text-hover'>{menu_left.title}</a></li>
+              <li className='menu_left font-heading text-white pl-16 header:pb-10 '><a href={menu_left.link} className=' hover:text-hover'>{menu_left.title}</a></li>
             ))}
           </ul>
         </div>
         <div className=' flex header:justify-between header:h-90 header:items-center header:w-full'> 
-        <div className=' w-120 h-120 bg-second rounded-full font-heading text-white text-4xl flex justify-center items-center 
+        <div className=' header-logo w-120 h-120 bg-second rounded-full font-heading text-white text-4xl flex justify-center items-center 
         header:w-60 header:h-60 header:text-xl header:order-1'>
           {logo.name}
         </div>

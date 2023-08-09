@@ -16,6 +16,11 @@ const widthClasses = generateClasses();
 const heightClasses = generateClasses();
 const marginClasses = generateClasses();
 const paddingClasses = generateClasses();
+const minFontSize = 6;
+const maxFontSize = 200;
+const fontSizeIncrement = 2;
+const fontSizes = generateClasses(minFontSize, maxFontSize, fontSizeIncrement);
+
 const bgColors = {
   bg: '#D9D9D9',
   section: '#F9F9F9',
@@ -51,9 +56,10 @@ const tailwindConfig = {
       screens: {
         'Pc': { min: '1920px', max: '2500px' },
         'Desktop': { min: '1280px', max: '1920px' },
-        'laptop': { min: '1024px', max: '1280px' },
+        'laptop': { min: '960px', max: '1280px' },
         'tab': { min: '960px', max: '1280px' },
         'mobile': { min: '450px', max: '960px' },
+        'smallmobile': { min: '250px', max: '550px' },
         'header': {min: '150px', max: '1280px'},
         'smallheader': {min: '150px', max: '600x'},
         'headertarget': {min: '1280px', max: '2800px'}
@@ -64,6 +70,7 @@ const tailwindConfig = {
       padding: paddingClasses,
       backgroundColor: bgColors,
       fontFamily: fontFamilies,
+      fontSize: fontSizes,
       textColor: textColors, // Add the text color configuration
     },
   },
