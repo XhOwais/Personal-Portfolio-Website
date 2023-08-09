@@ -40,8 +40,12 @@ export default {
           "max": "600x"
         },
         "headertarget": {
-          "min": "1280px",
+          "min": "1279px",
           "max": "2800px"
+        },
+        "bugFix1000": {
+          "min": "960px",
+          "max": "1000px"
         }
       },
       "width": {

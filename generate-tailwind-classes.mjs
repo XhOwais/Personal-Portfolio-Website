@@ -62,7 +62,8 @@ const tailwindConfig = {
         'smallmobile': { min: '250px', max: '550px' },
         'header': {min: '150px', max: '1280px'},
         'smallheader': {min: '150px', max: '600x'},
-        'headertarget': {min: '1280px', max: '2800px'}
+        'headertarget': {min: '1279px', max: '2800px'},
+        'bugFix1000': {min: '960px', max: '1000px'},
       },
       width: widthClasses,
       height: heightClasses,

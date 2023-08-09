@@ -29,7 +29,7 @@ export default function Hero() {
                     <button className=' w-180 h-50 bg-first rounded-lg text-white 
                     Pc:mt-32 laptop:mt-16 mobile:mt-16 smallmobile:mt-16'>Dowload resume</button>
                 </div>
-                <div className=' Pc:w-550 Pc:h-550 Desktop:w-450 Desktop:h-450 laptop:w-336 laptop:h-348 mobile:w-250 mobile:h-348.75 smallmobile:w-230 mobile:order-1 smallmobile:mt-32 smallmobile:order-1 Desktop:mx-30 laptop:scale-x-[-1]  bg-section rounded-full flex justify-center self-center overflow-hidden'><img className='' src={Pic} alt="" /></div>
+                <div className=' Pc:w-550 Pc:h-550 Desktop:w-450 Desktop:h-450 laptop:w-336 laptop:h-348  mobile:w-250 mobile:h-348.75 smallmobile:w-230 bugFix1000:w-auto  mobile:order-1 smallmobile:mt-32 smallmobile:order-1 Desktop:mx-30 laptop:scale-x-[-1]  bg-section rounded-full flex justify-center self-center overflow-hidden'><img className='' src={Pic} alt="" /></div>
                 <div className=' w-552 mobile:w-auto smallmobile:w-auto self-end laptop:w-full mobile:order-3 smallmobile:order-3 mobile:mt-32 smallmobile:mt-32'>
                     <h4 className=' font-heading text-2xl text-heading'>About</h4>
                     {aboutme.map((item,index)=>(

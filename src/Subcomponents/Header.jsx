@@ -57,7 +57,10 @@ export default function Header() {
         header:w-60 header:h-60 header:text-xl header:order-1'>
           {logo.name}
         </div>
-        <div onClick={toggleNav}  className=' toggleBtn w-60 h-23 bg-second Pc:hidden Desktop:hidden order-2'>
+        <div onClick={toggleNav}  className=' toggleBtn w-80 h-23  Pc:hidden Desktop:hidden order-2 flex flex-col justify-between items-center'>
+          <div className={` w-60 h-3 ${isNavOpen ? 'bg-second rotate-45' : 'bg-white'}`}></div>
+          <div className={`w-60 h-3 bg-white self-start ${isNavOpen ? 'hidden' : 'block'}`}></div>
+          <div className={` w-60 h-3 ${isNavOpen ? 'bg-second -rotate-45' : 'bg-white'}`}></div>
         </div>
         </div>
         <div className={`menu-right
