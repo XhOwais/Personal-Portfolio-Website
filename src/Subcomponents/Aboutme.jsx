@@ -80,6 +80,10 @@ export default function Aboutme() {
                     </div>
                 </div>
             </div>
+            <div className=' h-auto w-auto py-30 Pc:w-980 Desktop:w-980 laptop:w-auto laptop:mx-120 mobile:mx-60 smallmobile:mx-30 mobile:mt-40 mobile:flex-col smallmobile:flex-col  bg-bg rounded-3xl px-32 flex justify-between items-center m-auto mt-32'>
+                 <button className=' font-heading text-24 h-90 Pc:w-429 Desktop:w-429 laptop:w-400 mobile:w-full smallmobile:w-full mobile:text-16 smallmobile:text-12 mobile:mb-20 smallmobile:mb-20 laptop:text-16 laptop:mr-20  rounded-2xl bg-first text-white'>Know More About ME</button>
+                 <button className=' font-heading text-24 h-90 Pc:w-429 Desktop:w-429 laptop:w-400 mobile:w-full smallmobile:w-full mobile:text-16 smallmobile:text-12  laptop:text-16 rounded-2xl bg-second text-white'>Download Resume</button>
+            </div>
         </>
     )
 }
