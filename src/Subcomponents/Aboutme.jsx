@@ -32,9 +32,9 @@ export default function Aboutme() {
     ]
     return (
         <>
-            <div className=' w-auto h-auto rounded-3xl bg-first Pc:mx-120 Desktop:mx-60 laptop:mx-60 mobile:mx-60 smallmobile:mx-25 mt-60 pb-74 smallmobile:pb-24'>
+            <div className=' w-auto h-auto rounded-3xl bg-first Pc:mx-120 Desktop:mx-60 laptop:mx-60 mobile:mx-60 smallmobile:mx-25 mt-60 pb-74 laptop:pb-42 smallmobile:pb-24'>
                 <div className=''>
-                    <div className=' flex w-full justify-center laptop:justify-start items-center mobile:flex-col smallmobile:flex-col laptop:px-70 Pc:pt-74 Desktop:pt-74 laptop:pt-32 mobile:pt-0 mobile:-translate-y-10 smallmobile:-translate-y-10'>
+                    <div className=' flex w-full justify-center laptop:justify-start items-center mobile:flex-col smallmobile:flex-col laptop:px-120 Pc:pt-74 Desktop:pt-74 laptop:pt-60 mobile:pt-0 mobile:-translate-y-10 smallmobile:-translate-y-10'>
                         <div className=' w-150 h-150 laptop:w-auto  laptop:h-auto smallmobile:w-80 smallmobile:h-80'>
                             <img src={Pic2} alt="" srcset="" />
                         </div>
@@ -42,7 +42,7 @@ export default function Aboutme() {
                             {intro.text}
                         </div>
                     </div>
-                    <div className=' flex justify-between  laptop:flex-col laptop:items-start mobile:flex-col smallmobile:block px-120 mobile:px-40 smallmobile:px-20 Desktop:px-80 mt-94 mobile:mt-60'>
+                    <div className=' flex justify-between  laptop:flex-col laptop:items-start mobile:flex-col smallmobile:block px-120 mobile:px-40 smallmobile:px-20 Desktop:px-80 Pc:mt-94 mt-60 mobile:mt-32 smallmobile:mt-10'>
                     <div className=' Desktop:pr-60 laptop:mb-24 mobile:mb-24'>
                     <div>
                         <h1 className=' Pc:w-424 Desktop:w-424  font-heading text-32 smallmobile:text-24 smallmobile:pb-12  text-white '><spam className=' text-hover '>Skill</spam> I posses as a <spam className=' text-hover '>specialist</spam></h1>
