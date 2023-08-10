@@ -42,6 +42,7 @@ const textColors = {
   heading: '#363636',
   sub: '#7A7A7A',
   body: '#756B6B',
+  text: '#F8F8F8',
   hover: '#F96666',
   // ... add more colors as needed
 };
@@ -64,6 +65,7 @@ const tailwindConfig = {
         'smallheader': {min: '150px', max: '600x'},
         'headertarget': {min: '1279px', max: '2800px'},
         'bugFix1000': {min: '960px', max: '1000px'},
+        'hero': {min: '1280px', max: '1600px'},
       },
       width: widthClasses,
       height: heightClasses,

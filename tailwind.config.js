@@ -46,6 +46,10 @@ export default {
         "bugFix1000": {
           "min": "960px",
           "max": "1000px"
+        },
+        "hero": {
+          "min": "1280px",
+          "max": "1600px"
         }
       },
       "width": {
@@ -5080,6 +5084,7 @@ export default {
         "heading": "#363636",
         "sub": "#7A7A7A",
         "body": "#756B6B",
+        "text": "#F8F8F8",
         "hover": "#F96666"
       }
     }
