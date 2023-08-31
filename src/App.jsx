@@ -3,6 +3,7 @@ import Header from "./Subcomponents/Header";
 import Hero from "./Subcomponents/Hero";
 import Services from "./Subcomponents/Services";
 import Portfolio from "./Subcomponents/portfolio";
+import './app.css';
 export default function App() {
   return (
     <>
