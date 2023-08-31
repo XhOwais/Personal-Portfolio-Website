@@ -3,7 +3,7 @@ export default function Footer() {
     return(
         <>
         <div>
-            <div className=" w-auto h-600 rounded-3xl bg-heading mx-120 px-80 flex items-center ">
+            <div className=" w-auto h-600 rounded-3xl bg-heading mx-120 px-80 flex items-center mt-60 ">
             <div className=' flex gap-8 items-center'>
                 <div className=''>
                     <h2 className=" font-heading text-32 text-white mb-32">
