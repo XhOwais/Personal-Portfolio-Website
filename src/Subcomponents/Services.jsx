@@ -50,7 +50,7 @@ export default function Services() {
         </ul>
         <div className=''>
         {Services.map((item, index) => (
-          <div className=' w-auto h-auto bg-second rounded-3xl Pc:mx-120 Pc:py-60 Pc:mt-52  Desktop:mx-60 Desktop:py-60 Desktop:mt-32 laptop:mx-60 laptop:mt-32 mobile:mt-24 smallmobile:mt-24 mobile:mx-60 mobile:py-60 smallmobile:py-42 smallmobile:mx-25'>
+          <div className=' w-auto h-auto bg-second rounded-3xl Pc:mx-120 Pc:py-60 Pc:mt-52  Desktop:mx-60 Desktop:py-60  Desktop:mt-32 laptop:mx-60 laptop:px-80 laptop:mt-32 mobile:mt-24 smallmobile:mt-24 mobile:mx-60 mobile:py-60 smallmobile:py-42 smallmobile:mx-25'>
             <div key={index} className=' flex justify-between items-center mobile:flex-col-reverse smallmobile:flex-col-reverse h-full Pc:px-120 Desktop:px-100 laptop:flex-col-reverse laptop:h-auto laptop:py-60 mobile:px-60 smallmobile:px-40 '>
               <div>
                 <h2 className=' font-heading text-32 mobile:text-24 mobile:w-215 smallmobile:text-20 text-heading mb-16'>{item.name}</h2>
