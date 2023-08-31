@@ -43,27 +43,26 @@ export default function Services() {
   ]
   return (
     <>
-      <div className=" w-auto h-full bg-first rounded-tl-3xl rounded-tr-3xl rounded-bl-3xl mt-60  Pc:mx-120 Pc:pb-60 Desktop:mx-60 Desktop:pb-60 laptop:mx-60 laptop:pb-60 mobile:mx-60 smallmobile:mx-25">
+      <div className=" w-auto h-full bg-first rounded-tl-3xl rounded-tr-3xl rounded-bl-3xl mt-60  Pc:mx-120 Pc:pb-60 Desktop:mx-60 Desktop:pb-60 laptop:mx-60 laptop:pb-60 mobile:pb-42 smallmobile:py-32 mobile:mx-60 smallmobile:mx-25">
         <ul className=' w-auto flex justify-between mobile:flex-col mobile:pb-32 smallmobile:flex-col Pc:mx-120  Desktop:mx-80 laptop:mx-80 laptop:pt-60 mobile:mx-60 mobile:pt-42 smallmobile:mx-30 Pc:pt-60 Desktop:pt-60 default:pt-60'>
           <li className=' font-heading text-32 laptop:text-24 mobile:pb-16 text-hover'><h1><span className=' text-white'>My</span> Services</h1></li>
           <li className=' font-heading text-20 laptop:text-16 text-white Pc:w-709 Desktop:w-563 laptop:w-400'><p>{servicesTagline}</p></li>
         </ul>
         <div className=''>
         {Services.map((item, index) => (
-          <div className=' w-auto h-auto bg-second rounded-3xl Pc:mx-120 Pc:py-60 Pc:mt-52  Desktop:mx-60 Desktop:py-60 Desktop:mt-32 laptop:mx-60 laptop:mt-32 mobile:mx-60 mobile:py-60 smallmobile:mx-25'>
-            <div key={index} className=' flex justify-between items-center mobile:flex-col-reverse smallmobile:flex-col-reverse h-full Pc:px-120 Desktop:px-100 laptop:flex-col-reverse laptop:h-auto laptop:py-60 mobile:px-120'>
+          <div className=' w-auto h-auto bg-second rounded-3xl Pc:mx-120 Pc:py-60 Pc:mt-52  Desktop:mx-60 Desktop:py-60 Desktop:mt-32 laptop:mx-60 laptop:mt-32 mobile:mt-24 smallmobile:mt-24 mobile:mx-60 mobile:py-60 smallmobile:py-42 smallmobile:mx-25'>
+            <div key={index} className=' flex justify-between items-center mobile:flex-col-reverse smallmobile:flex-col-reverse h-full Pc:px-120 Desktop:px-100 laptop:flex-col-reverse laptop:h-auto laptop:py-60 mobile:px-60 smallmobile:px-40 '>
               <div>
-                <h2 className=' font-heading text-32 mobile:text-24 mobile:w-215 text-heading mb-16'>{item.name}</h2>
+                <h2 className=' font-heading text-32 mobile:text-24 mobile:w-215 smallmobile:text-20 text-heading mb-16'>{item.name}</h2>
                 <ul className=' Desktop:w-414'>
                   <li className=' font-body text-16 text-white pb-16'>{item.about1}</li>
                   <li><img src={Polygon} alt="" srcSet="" /></li>
                   <li className=' font-body text-16 text-white pt-16'>{item.about2}</li>
                 </ul>
               </div>
-              <div className=' w-400 h-400 laptop:w-250  laptop:h-250 mobile:w-230 mobile:h-230 mobile:mb-16 rounded-full flex justify-center items-center bg-section laptop:mb-32 '><img src={item.img} alt="" srcSet="" /></div>
+              <div className=' w-400 h-400 laptop:w-250  laptop:h-250 mobile:w-230 mobile:h-230 smallmobile:h-200 smallmobile:w-200 mobile:mb-32 smallmobile:mb-32 rounded-full flex justify-center items-center bg-section laptop:mb-32 '><img src={item.img} alt="" srcSet="" /></div>
             </div>
           </div>
-
         ))}
         </div>
       </div>
