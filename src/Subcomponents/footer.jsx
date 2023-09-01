@@ -1,27 +1,4 @@
-import Pic from '../assets/pic.png';
-import Behnace from '../assets/Behance.svg';
-import Github from '../assets/Github.svg';
-import Devfolio from '../assets/Devfolio.svg';
-import Linkedin from '../assets/Linkedin.svg';
-
-const professionalLinks=[
-    {
-    img: Behnace,
-    link: '#'
-    },
-    {
-    img: Github,
-    link: '#'
-    },
-    {
-    img: Devfolio,
-    link: '#'
-    },
-    {
-    img: Linkedin,
-    link: '#'
-    },
-]
+import Pic from '../assets/pic.png'
 export default function Footer() {
     return(
         <>
@@ -42,13 +19,7 @@ export default function Footer() {
             </div>
             </div>
             <div className=' w-full h-450 bg-second absolute -z-50 top-80 mobile:top-96 translate-y-24'>
-            <ul>
-                {professionalLinks.map((item,index)=>{
-                    <li>
-                    <a href={item.link}><img src={item.img} alt="" /></a>
-                </li>
-                })}
-            </ul>
+
             </div>
         </div>
         </>
