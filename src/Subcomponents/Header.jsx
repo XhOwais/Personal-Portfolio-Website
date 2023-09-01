@@ -36,7 +36,7 @@ export default function Header() {
     },
     {
       title: 'Contact me',
-      link: '#'
+      link: '#footer'
     },
   ] 
   return (

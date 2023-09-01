@@ -13,7 +13,7 @@ export default function App() {
       <Aboutme/>
       <Services/>
       <Portfolio/>
-      <Footer/> 
+      <Footer /> 
     </>
   )
 }
