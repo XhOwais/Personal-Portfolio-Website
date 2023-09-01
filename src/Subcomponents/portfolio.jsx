@@ -13,7 +13,7 @@ export default function Portfolio(){
           </div>
           <div className=" Pc:mx-120 Desktop:mx-60 laptop:mx-60 mobile:mx-60 smallmobile:mx-25 mt-60">
             <div className=" flex gap-8 mobile:flex-col smallmobile:flex-col">
-                <div className=" w-full h-550 laptop:h-450 smallmobile:h-300 rounded-3xl p-32 smallmobile:px-25 bg-heading">
+                <div className=" w-full h-550 laptop:h-450 smallmobile:h-300 rounded-3xl p-32 smallmobile:px-25 bg-heading"> 
                     <div className=" w-auto h-full rounded-3xl bg-white">
                     </div>
                 </div>
@@ -23,9 +23,9 @@ export default function Portfolio(){
                 </div>
             </div>
             <div className=' h-auto w-auto py-30 Pc:w-980 Desktop:w-980 laptop:w-auto laptop:mx-120 mobile:mx-60 smallmobile:mx-30 mobile:mt-40 mobile:flex-col smallmobile:flex-col  bg-white rounded-3xl px-32 flex justify-center items-center m-auto mt-32'>
-                 <button className=' font-heading text-24 h-90 Pc:w-full Desktop:w-full laptop:w-full mobile:w-full smallmobile:w-full mobile:text-16 smallmobile:text-12  laptop:text-16 laptop:mr-20  rounded-2xl bg-first text-white'>Know More About ME</button>
+                 <button className=' font-heading text-24 h-90 Pc:w-full Desktop:w-full laptop:w-full mobile:w-full smallmobile:w-full mobile:text-16 smallmobile:text-12  smallmobile:mb-20 laptop:text-16 laptop:mr-20  rounded-2xl bg-first text-white'>Know More About ME</button>
             </div>
           </div>
         </>
     )
-}
+}   
